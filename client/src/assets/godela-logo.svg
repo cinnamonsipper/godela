@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F8FFF" />
+      <stop offset="50%" stop-color="#7C5EFF" />
+      <stop offset="100%" stop-color="#CA53FF" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Double cone / hourglass wireframe structure -->
+  <g transform="translate(100, 100)" stroke="url(#logoGradient)" stroke-width="1.2" fill="none">
+    <!-- Top cone structure -->
+    <path d="M 0,-60 L 35,-30 L 50,-10 L 55,0 M 0,-60 L -35,-30 L -50,-10 L -55,0" />
+    <path d="M 0,-60 L 15,-40 L 30,-20 L 40,-5 M 0,-60 L -15,-40 L -30,-20 L -40,-5" />
+    <path d="M 0,-60 L 25,-35 L 40,-15 L 48,-3 M 0,-60 L -25,-35 L -40,-15 L -48,-3" />
+    
+    <!-- Middle horizontal line -->
+    <path d="M -55,0 L 55,0" stroke-width="1.5" />
+    
+    <!-- Bottom cone structure -->
+    <path d="M 0,60 L 35,30 L 50,10 L 55,0 M 0,60 L -35,30 L -50,10 L -55,0" />
+    <path d="M 0,60 L 15,40 L 30,20 L 40,5 M 0,60 L -15,40 L -30,20 L -40,5" />
+    <path d="M 0,60 L 25,35 L 40,15 L 48,3 M 0,60 L -25,35 L -40,15 L -48,3" />
+    
+    <!-- Elliptical rings -->
+    <ellipse cx="0" cy="0" rx="55" ry="12" />
+    <ellipse cx="0" cy="-20" rx="40" ry="10" />
+    <ellipse cx="0" cy="20" rx="40" ry="10" />
+    <ellipse cx="0" cy="-40" rx="25" ry="7" />
+    <ellipse cx="0" cy="40" rx="25" ry="7" />
+    
+    <!-- Vertical line -->
+    <line x1="0" y1="-60" x2="0" y2="60" />
+  </g>
+</svg>

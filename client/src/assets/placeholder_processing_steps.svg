@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="nodeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3730a3" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="nodeGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="500" height="200" rx="6" fill="#0D1017" opacity="0.6"/>
+  
+  <!-- Processing steps connected by arrows -->
+  <g>
+    <!-- Node 1: Import Data -->
+    <rect x="20" y="80" width="90" height="40" rx="6" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <text x="65" y="96" fill="white" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">IMPORT</text>
+    <text x="65" y="110" fill="white" font-family="Arial" font-size="10" text-anchor="middle">Raw Data</text>
+    
+    <!-- Arrow 1 -->
+    <path d="M 110 100 H 135" stroke="#4b5563" stroke-width="2" stroke-dasharray="0"/>
+    <path d="M 130 95 L 135 100 L 130 105" fill="none" stroke="#4b5563" stroke-width="2"/>
+    
+    <!-- Node 2: Clean & Normalize -->
+    <rect x="135" y="80" width="90" height="40" rx="6" fill="url(#nodeGradient2)" filter="url(#glow)"/>
+    <text x="180" y="96" fill="white" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">CLEAN</text>
+    <text x="180" y="110" fill="white" font-family="Arial" font-size="10" text-anchor="middle">Normalize</text>
+    
+    <!-- Arrow 2 -->
+    <path d="M 225 100 H 250" stroke="#4b5563" stroke-width="2" stroke-dasharray="0"/>
+    <path d="M 245 95 L 250 100 L 245 105" fill="none" stroke="#4b5563" stroke-width="2"/>
+    
+    <!-- Node 3: Feature Engineering -->
+    <rect x="250" y="80" width="90" height="40" rx="6" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <text x="295" y="96" fill="white" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">FEATURE</text>
+    <text x="295" y="110" fill="white" font-family="Arial" font-size="10" text-anchor="middle">Engineering</text>
+    
+    <!-- Arrow 3 -->
+    <path d="M 340 100 H 365" stroke="#4b5563" stroke-width="2" stroke-dasharray="0"/>
+    <path d="M 360 95 L 365 100 L 360 105" fill="none" stroke="#4b5563" stroke-width="2"/>
+    
+    <!-- Node 4: Split Data -->
+    <rect x="365" y="80" width="90" height="40" rx="6" fill="url(#nodeGradient3)" filter="url(#glow)"/>
+    <text x="410" y="96" fill="white" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">SPLIT</text>
+    <text x="410" y="110" fill="white" font-family="Arial" font-size="10" text-anchor="middle">Train/Test</text>
+  </g>
+  
+  <!-- Processing details -->
+  <g transform="translate(0, 140)">
+    <!-- Detail box -->
+    <rect x="20" y="0" width="460" height="50" rx="4" fill="#1A2030" opacity="0.7"/>
+    
+    <!-- Detail text -->
+    <text x="30" y="15" fill="#94a3b8" font-family="Arial" font-size="10" font-weight="bold">Processing Details:</text>
+    
+    <text x="30" y="33" fill="#e2e8f0" font-family="Arial" font-size="10">• Removed 2 outlier points with anomalous CD values</text>
+    <text x="250" y="33" fill="#e2e8f0" font-family="Arial" font-size="10">• Applied Min-Max scaling to inputs</text>
+    
+    <text x="30" y="45" fill="#e2e8f0" font-family="Arial" font-size="10">• Created derived features: AoA², Re·t/c</text>
+    <text x="250" y="45" fill="#e2e8f0" font-family="Arial" font-size="10">• Split: 80% training, 20% validation</text>
+  </g>
+  
+  <!-- Status badge -->
+  <g transform="translate(430, 20)">
+    <rect x="0" y="0" width="50" height="20" rx="10" fill="#059669" opacity="0.9"/>
+    <text x="25" y="14" fill="white" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">DONE</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="20" y="25" fill="#f1f5f9" font-family="Arial" font-size="12" font-weight="bold">Airfoil Data Processing Pipeline</text>
+</svg>

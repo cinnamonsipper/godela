@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="rowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a2234" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#131a29" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Table Background -->
+  <rect x="0" y="0" width="600" height="200" rx="4" fill="#0D1017"/>
+  
+  <!-- Table Header -->
+  <rect x="10" y="10" width="580" height="30" rx="3" fill="url(#headerGradient)"/>
+  
+  <!-- Column Titles -->
+  <text x="25" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">Sample ID</text>
+  <text x="115" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">AoA (α)</text>
+  <text x="205" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">t/c Ratio</text>
+  <text x="295" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">Re (×10⁶)</text>
+  <text x="385" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">CL</text>
+  <text x="475" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">CD</text>
+  <text x="565" y="30" fill="#a3b3d6" font-family="Arial" font-size="12" font-weight="bold">Source</text>
+  
+  <!-- Table Rows -->
+  <rect x="10" y="45" width="580" height="25" rx="2" fill="url(#rowGradient)" opacity="0.8"/>
+  <text x="25" y="62" fill="#e2e8f0" font-family="Arial" font-size="11">#001</text>
+  <text x="115" y="62" fill="#e2e8f0" font-family="Arial" font-size="11">0°</text>
+  <text x="205" y="62" fill="#e2e8f0" font-family="Arial" font-size="11">0.12</text>
+  <text x="295" y="62" fill="#e2e8f0" font-family="Arial" font-size="11">1.0</text>
+  <text x="385" y="62" fill="#e2e8f0" font-family="Arial" font-size="11">0.00</text>
+  <text x="475" y="62" fill="#e2e8f0" font-family="Arial" font-size="11">0.0065</text>
+  <text x="565" y="62" fill="#4ade80" font-family="Arial" font-size="11">Experiment</text>
+  
+  <rect x="10" y="75" width="580" height="25" rx="2" fill="url(#rowGradient)" opacity="0.6"/>
+  <text x="25" y="92" fill="#e2e8f0" font-family="Arial" font-size="11">#002</text>
+  <text x="115" y="92" fill="#e2e8f0" font-family="Arial" font-size="11">2°</text>
+  <text x="205" y="92" fill="#e2e8f0" font-family="Arial" font-size="11">0.12</text>
+  <text x="295" y="92" fill="#e2e8f0" font-family="Arial" font-size="11">1.0</text>
+  <text x="385" y="92" fill="#e2e8f0" font-family="Arial" font-size="11">0.23</text>
+  <text x="475" y="92" fill="#e2e8f0" font-family="Arial" font-size="11">0.0070</text>
+  <text x="565" y="92" fill="#4ade80" font-family="Arial" font-size="11">Experiment</text>
+  
+  <rect x="10" y="105" width="580" height="25" rx="2" fill="url(#rowGradient)" opacity="0.8"/>
+  <text x="25" y="122" fill="#e2e8f0" font-family="Arial" font-size="11">#003</text>
+  <text x="115" y="122" fill="#e2e8f0" font-family="Arial" font-size="11">4°</text>
+  <text x="205" y="122" fill="#e2e8f0" font-family="Arial" font-size="11">0.12</text>
+  <text x="295" y="122" fill="#e2e8f0" font-family="Arial" font-size="11">1.0</text>
+  <text x="385" y="122" fill="#e2e8f0" font-family="Arial" font-size="11">0.45</text>
+  <text x="475" y="122" fill="#e2e8f0" font-family="Arial" font-size="11">0.0080</text>
+  <text x="565" y="122" fill="#4ade80" font-family="Arial" font-size="11">Experiment</text>
+  
+  <rect x="10" y="135" width="580" height="25" rx="2" fill="url(#rowGradient)" opacity="0.6"/>
+  <text x="25" y="152" fill="#e2e8f0" font-family="Arial" font-size="11">#004</text>
+  <text x="115" y="152" fill="#e2e8f0" font-family="Arial" font-size="11">6°</text>
+  <text x="205" y="152" fill="#e2e8f0" font-family="Arial" font-size="11">0.12</text>
+  <text x="295" y="152" fill="#e2e8f0" font-family="Arial" font-size="11">1.0</text>
+  <text x="385" y="152" fill="#e2e8f0" font-family="Arial" font-size="11">0.68</text>
+  <text x="475" y="152" fill="#e2e8f0" font-family="Arial" font-size="11">0.0110</text>
+  <text x="565" y="152" fill="#4ade80" font-family="Arial" font-size="11">Experiment</text>
+  
+  <rect x="10" y="165" width="580" height="25" rx="2" fill="url(#rowGradient)" opacity="0.8"/>
+  <text x="25" y="182" fill="#e2e8f0" font-family="Arial" font-size="11">#005</text>
+  <text x="115" y="182" fill="#e2e8f0" font-family="Arial" font-size="11">8°</text>
+  <text x="205" y="182" fill="#e2e8f0" font-family="Arial" font-size="11">0.12</text>
+  <text x="295" y="182" fill="#e2e8f0" font-family="Arial" font-size="11">1.0</text>
+  <text x="385" y="182" fill="#e2e8f0" font-family="Arial" font-size="11">0.90</text>
+  <text x="475" y="182" fill="#e2e8f0" font-family="Arial" font-size="11">0.0150</text>
+  <text x="565" y="182" fill="#4ade80" font-family="Arial" font-size="11">Experiment</text>
+</svg>

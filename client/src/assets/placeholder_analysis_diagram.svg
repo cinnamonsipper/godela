@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="260" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2e69" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#162040" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="airfoilGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <rect x="0" y="0" width="400" height="260" rx="8" fill="url(#bgGradient)"/>
+  
+  <!-- Grid lines -->
+  <g opacity="0.15">
+    <path d="M 20 30 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 60 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 90 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 120 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 150 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 180 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 210 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 20 240 H 380" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    
+    <path d="M 50 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 100 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 150 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 200 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 250 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 300 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M 350 20 V 240" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- Airfoil diagram -->
+  <g transform="translate(200, 130)">
+    <!-- Flow direction arrow -->
+    <path d="M -120 0 H -30" stroke="#6ebef6" stroke-width="2" stroke-dasharray="4,2"/>
+    <path d="M -40 -6 L -30 0 L -40 6" fill="none" stroke="#6ebef6" stroke-width="2"/>
+    <text x="-110" y="-10" fill="#6ebef6" font-family="Arial" font-size="11">Airflow</text>
+    
+    <!-- Airfoil shape -->
+    <path d="M -20 0 C -10 -15 40 -15 80 0 C 40 15 -10 15 -20 0 Z" fill="url(#airfoilGradient)" filter="url(#glow)"/>
+    
+    <!-- Angle of attack indicator -->
+    <path d="M -40 0 L 100 0" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="5,3"/>
+    <path d="M -20 0 L 80 -20" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="5,3"/>
+    <path d="M 0 0 A 20 20 0 0 1 17 -10" stroke="#8b5cf6" stroke-width="1" fill="none"/>
+    <text x="21" y="-7" fill="#8b5cf6" font-family="Arial" font-size="10">α</text>
+    
+    <!-- Force vectors -->
+    <path d="M 30 0 V -40" stroke="#4ade80" stroke-width="2" stroke-dasharray="0"/>
+    <path d="M 30 -35 L 25 -25 L 30 -40 L 35 -25" fill="#4ade80" stroke="#4ade80" stroke-width="1"/>
+    <text x="35" y="-28" fill="#4ade80" font-family="Arial" font-size="10">Lift</text>
+    
+    <path d="M 30 0 H 70" stroke="#fb7185" stroke-width="2" stroke-dasharray="0"/>
+    <path d="M 65 0 L 55 -5 L 70 0 L 55 5" fill="#fb7185" stroke="#fb7185" stroke-width="1"/>
+    <text x="72" y="10" fill="#fb7185" font-family="Arial" font-size="10">Drag</text>
+    
+    <!-- Thickness indicator -->
+    <path d="M 30 -15 V 15" stroke="#fcd34d" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="5" y="25" fill="#fcd34d" font-family="Arial" font-size="9">Thickness (t/c)</text>
+  </g>
+  
+  <!-- Labels -->
+  <text x="20" y="20" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">Airfoil Parameters Analysis</text>
+  <text x="280" y="240" fill="#a5b4fc" font-family="Arial" font-size="10">AI-Generated Model</text>
+</svg>

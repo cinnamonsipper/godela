@@ -1,0 +1,7 @@
+<svg width="300" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="240" fill="#1e293b" rx="8" />
+  <text x="150" y="100" fill="#64748b" font-family="Arial" font-size="48" text-anchor="middle">GLB</text>
+  <text x="150" y="140" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle">3D Model Format</text>
+  <path d="M100,170 L150,120 L200,170 L100,170" fill="none" stroke="#64748b" stroke-width="2" />
+  <circle cx="150" cy="140" r="15" fill="#475569" />
+</svg>

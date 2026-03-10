@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="airfoilGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with flow lines -->
+  <rect x="0" y="0" width="400" height="120" fill="#0D1017"/>
+  
+  <!-- Flow streamlines -->
+  <g opacity="0.3">
+    <path d="M 0 20 H 400" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="3,3"/>
+    <path d="M 0 40 H 400" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="3,3"/>
+    <path d="M 0 60 H 400" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="3,3"/>
+    <path d="M 0 80 H 400" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="3,3"/>
+    <path d="M 0 100 H 400" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- Direction arrow -->
+  <g>
+    <path d="M 30 60 H 60" stroke="#60a5fa" stroke-width="1.5"/>
+    <path d="M 55 56 L 60 60 L 55 64" fill="none" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="37" y="52" fill="#60a5fa" font-family="Arial" font-size="9">Flow</text>
+  </g>
+  
+  <!-- Airfoil shape -->
+  <g transform="translate(200, 60)">
+    <path d="M -70 0 C -50 -20 50 -20 120 0 C 50 20 -50 20 -70 0 Z" fill="url(#airfoilGradient)" filter="url(#glow)"/>
+    
+    <!-- Leading edge point -->
+    <circle cx="-70" cy="0" r="2" fill="#f1f5f9"/>
+    
+    <!-- Trailing edge point -->
+    <circle cx="120" cy="0" r="2" fill="#f1f5f9"/>
+    
+    <!-- Chord line -->
+    <path d="M -70 0 L 120 0" stroke="#f1f5f9" stroke-width="0.5" stroke-dasharray="2,2"/>
+    
+    <!-- Maximum thickness point -->
+    <circle cx="20" cy="0" r="2" fill="#f1f5f9"/>
+    <path d="M 20 -20 L 20 20" stroke="#fcd34d" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <text x="25" y="-10" fill="#fcd34d" font-family="Arial" font-size="9">t/c</text>
+  </g>
+  
+  <!-- Reference indicator -->
+  <text x="370" y="105" fill="#4b5563" font-family="Arial" font-size="8">NACA Airfoil</text>
+</svg>
